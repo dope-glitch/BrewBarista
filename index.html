@@ -4,66 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BrewBarista</title>
-  <!-- Google Fonts for stylish text logo -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.jpeg">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <!-- Text logo instead of image -->
-    <div class="logo-text" style="font-family: 'Pacifico', cursive; font-size: 2.2em; color: #fff8e1;">
-      BrewBarista
-    </div>
-    <nav class="nav-links">
-      <div><a href="Aboutus.html">About Us</a></div>
-      <div><a href="login.html">Login</a></div>
-      <div><a href="Invest.html">Investor Relations</a></div>
-    </nav>
+    <a class="logo-text" href="#/">BrewBarista</a>
+    <nav class="nav-links" id="nav" aria-label="Main"></nav>
   </header>
-
-  <main>
-    <!-- Hero Section -->
-    <section class="hero">
-      <h1 style="font-family: 'Pacifico', cursive;">Welcome to BrewBarista</h1>
-      <p style="font-family: 'Playfair Display', serif; font-size:1.2em; color:#f5f5f5;">
-        Discover the café experience with us
-      </p>
-    </section>
-
-    <!-- About Section with Café Categories -->
-    <section class="about">
-      <h2>Our Cafés & Restaurants</h2>
-      <div class="category-container">
-        <div class="category-card">
-          <h3>☕ Specialty Coffee Shops</h3>
-          <p>Enjoy handcrafted brews, single-origin beans, and cozy spaces designed for true coffee lovers.</p>
-        </div>
-        <div class="category-card">
-          <h3>🍴 Fine Dining Restaurants</h3>
-          <p>Experience gourmet dishes, elegant ambiance, and world-class service for every special occasion.</p>
-        </div>
-        <div class="category-card">
-          <h3>🥗 Healthy & Organic Cafés</h3>
-          <p>Delight in fresh, organic meals and smoothies that nourish your body and mind in a serene setting.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Roles Section -->
-    <section class="roles">
-      <h2>Choose Your Role</h2>
-      <div class="role-buttons">
-        <!-- Updated buttons as links to separate pages -->
-        <a href="customer.html" class="role-btn customer">I’m a Customer</a>
-        <a href="owner.html" class="role-btn owner">I’m a Café Owner</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Copyright &copy; BrewBarista | All rights reserved</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <main id="app"></main>
+  <footer><p>Copyright &copy; BrewBarista | All rights reserved</p></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
 </body>
 </html>
